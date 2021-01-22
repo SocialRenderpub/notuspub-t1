@@ -19,7 +19,7 @@ export default function Navbar(props) {
                 <img 
                 alt='logo'
                 src={require("assets/img/brand/Rstudio.png")}
-                width={125}
+                width={120}
                 >
              </img>
               </a>

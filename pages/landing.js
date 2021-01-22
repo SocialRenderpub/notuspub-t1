@@ -14,7 +14,7 @@ export default function Landing() {
     <>
       <Navbar />
       <main>
-        <div className="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen-75">
+        <div className="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen">
           <div
             className="absolute top-0 w-full h-full bg-center bg-cover"
             style={{
@@ -43,7 +43,7 @@ export default function Landing() {
                 </div>
               </div>
             </div>
-          </div>
+           </div>
           <div
             className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-16"
             style={{ transform: "translateZ(0)" }}
@@ -57,17 +57,29 @@ export default function Landing() {
               x="0"
               y="0"
             >
-              
             </svg>
             
+            
           </div>
+          <div class="absolute  " style={{ bottom:"5vh" , left:"5vh"}}>
+
+                  <a href="" class="-20 bg-gray-200 rounded-full font-bold text-black px-4 py-3 transition duration-300 ease-in-out hover:bg-blue-600 mr-6">
+                  <i className="fas fa-user-friends text-xl"></i>
+
+                    <button> &nbsp; Sign up for early access </button>
+                  </a>
+                 
+          </div>
+          
         </div>
 
-        <section className="pb-20 bg-gray-300 -mt-24">
+        <section className="pb-20 bg-gray-300 pt-20">
           <div className="container mx-auto px-4">
+          <h2 className="text-4xl font-semibold text-center pb-20">Create and Publish spectacular renders in real-time within minutes</h2>
             <div className="flex flex-wrap">
-
+              
               <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
+                
                 <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
@@ -113,14 +125,12 @@ export default function Landing() {
               </div>
             </div>
 
-            <div className="container mx-auto px-4 mt-32">
+            <div className="container mx-auto px-4 my-32">
             <div className="flex flex-wrap justify-center text-center ">
               <div className="w-full lg:w-6/12 px-4">
-                <h2 className="text-4xl font-semibold">Here are our heroes</h2>
+                <h2 className="text-4xl font-semibold">Realtime Ray Tracing</h2>
                 <p className="text-lg leading-relaxed m-4 text-gray-600">
-                  According to the National Oceanic and Atmospheric
-                  Administration, Ted, Scambos, NSIDClead scentist, puts the
-                  potentially record maximum.
+                Achieve cinematic quality visuals in no time with NVIDIA’s RTX GPU accelerated ray tracing or fallback to the impressive bounce lighting system in the absence of RTX hardware. 
                 </p>
               </div>
             </div>
@@ -156,24 +166,17 @@ export default function Landing() {
             </div>
           </div>
 
-            <div className="flex flex-wrap items-center ">
+            <div className="flex flex-wrap-reverse items-center  ">
               <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
-                <div className="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
-                  <i className="fas fa-user-friends text-xl"></i>
-                </div>
+                
                 <h3 className="text-3xl mb-2 font-semibold leading-normal">
-                  Working with us is a pleasure
+                Foliage
                 </h3>
                 <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
-                  Don't let your uses guess by attaching tooltips and popoves to
-                  any element. Just make sure you enable them first via
-                  JavaScript.
+                Spawn highly optimized foliage and 3D grass on the terrain with control over clustering, and randomness to create natural looking meadows.
                 </p>
                 <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-                  The kit comes with three pre-built pages to help you get
-                  started faster. You can change the text and images and you're
-                  good to go. Just make sure you enable them first via
-                  JavaScript.
+                All foliage types automatically align with the terrain normal direction and also react to wind speed, strength and direction adding to the realism of your scene.v
                 </p>
                 
               </div>
@@ -192,7 +195,7 @@ export default function Landing() {
           </div>
         </section>
 
-        <section className="relative py-20">
+        <section className="relative py-20 ">
           <div
             className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
             style={{ transform: "translateZ(0)" }}
@@ -216,20 +219,18 @@ export default function Landing() {
           
 
           <div className="container mx-auto px-4">
-            <div className="items-center flex flex-wrap">
+            <div className="items-center flex flex-wrap ">
               <div className="w-full md:w-6/12 ml-auto mr-auto  px-4">
                 <img
                   alt="..."
-                  className="max-w-full rounded-lg shadow-lg"
+                  className="max-w-full mb-6 rounded-lg shadow-lg"
                   src="https://images.unsplash.com/photo-1533139143976-30918502365b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
                 />
               </div>
               <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
                 <div className="md:pr-12">
-                  <div className="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-300 mt-5">
-                    <i className="fas fa-rocket text-xl "></i>
-                  </div>
-                  <h3 className="text-3xl font-semibold">A growing company</h3>
+                  
+                  <h3 className="text-3xl  font-semibold">Mass Placement</h3>
                   <p className="mt-4 text-lg leading-relaxed text-gray-600">
                     The extension comes with three pre-built pages to help you
                     get started faster. You can change the text and images and
@@ -280,10 +281,38 @@ export default function Landing() {
                 </div>
               </div>
             </div>
+            <div className="flex flex-wrap-reverse items-center mt-24 ">
+              <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
+                
+                <h3 className="text-3xl mb-2 font-semibold leading-normal">
+                Physically Based Materials
+                </h3>
+                <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+                Spawn highly optimized foliage and 3D grass on the terrain with control over clustering, and randomness to create natural looking meadows.
+                </p>
+                <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+                All foliage types automatically align with the terrain normal direction and also react to wind speed, strength and direction adding to the realism of your scene.v
+                </p>
+                
+              </div>
+
+              <div className="w-full md:w-6/12 px-4 mr-auto ml-auto">
+                <div className="relative flex flex-col min-w-0 break-words  w-full mb-6 shadow-lg rounded-lg bg-gray-800">
+                  <img
+                    alt="..."
+                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+                    className="w-full align-middle rounded-lg"
+                  />
+                  
+                </div>
+              </div>
+            </div>
+
+
           </div>
         </section>
 
-        <section className="pt-20 pb-10">
+        {/* <section className="pt-20 pb-10">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center text-center ">
               <div className="w-full lg:w-6/12 px-4">
@@ -326,12 +355,11 @@ export default function Landing() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         
-
-        <section className="-pt-20 pb-48">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-wrap justify-center text-center ">
+        <section className="pt-20 pb-10">
+          <div className="container mx-auto px-4 ">
+            <div className="flex flex-wrap justify-center text-center my-8">
               <div className="w-full lg:w-6/12 px-4">
                 <h2 className="text-4xl font-semibold">Showcase</h2>
                 <p className="text-lg leading-relaxed m-4 text-gray-600">
@@ -341,63 +369,84 @@ export default function Landing() {
                 </p>
               </div>
             </div>
-            <div className="container px-4 mx-auto">
-            <div className="flex flex-wrap my-2">
-                <div className="w-1/2 px-4">
-                <img
-                  alt="..."
-                  className="max-w-full rounded-lg shadow-lg"
-                  src="https://images.unsplash.com/photo-1533139143976-30918502365b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
-                />
-                </div>
-                <div className="w-1/2 px-4">
-                <img
-                  alt="..."
-                  className="max-w-full rounded-lg shadow-lg"
-                  src="https://images.unsplash.com/photo-1533139143976-30918502365b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
-                />
+
+
+            <div className="flex flex-wrap items-center my-6">
+              
+              <div className="w-full md:w-6/12 px-4 mr-auto ml-auto mt-6">
+                <div className="relative flex flex-col min-w-0 break-words  w-full mb-6 shadow-lg rounded-lg bg-gray-800">
+                  <img
+                    alt="..."
+                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+                    className="w-full align-middle rounded-lg"
+                  />
+                  
                 </div>
               </div>
-              <div className="flex flex-wrap my-2">
-                <div className="w-1/2 px-4 md:w-4/12">
-                <img
-                  alt="..."
-                  className="max-w-full rounded-lg shadow-lg"
-                  src="https://images.unsplash.com/photo-1533139143976-30918502365b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
-                />
-                </div>
-                <div className="w-1/2 px-4 md:w-4/12">
-                <img
-                  alt="..."
-                  className="max-w-full rounded-lg shadow-lg"
-                  src="https://images.unsplash.com/photo-1533139143976-30918502365b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
-                />
-                </div>
-                <div className="w-1/2 px-4 md:w-4/12">
-                <img
-                  alt="..."
-                  className="max-w-full rounded-lg shadow-lg"
-                  src="https://images.unsplash.com/photo-1533139143976-30918502365b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
-                />
-                </div>
-              </div>
-              <div className="flex flex-wrap my-2">
-                <div className="w-1/2 px-4">
-                <img
-                  alt="..."
-                  className="max-w-full rounded-lg shadow-lg"
-                  src="https://images.unsplash.com/photo-1533139143976-30918502365b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
-                />
-                </div>
-                <div className="w-1/2 px-4">
-                <img
-                  alt="..."
-                  className="max-w-full rounded-lg shadow-lg"
-                  src="https://images.unsplash.com/photo-1533139143976-30918502365b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
-                />
+
+              <div className="w-full md:w-6/12 px-4 mr-auto ml-auto mt-6">
+                <div className="relative flex flex-col min-w-0 break-words  w-full mb-6 shadow-lg rounded-lg bg-gray-800">
+                  <img
+                    alt="..."
+                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+                    className="w-full align-middle rounded-lg"
+                  />
+                  
                 </div>
               </div>
             </div>
+
+            <div className="flex flex-wrap items-center my-6 ">
+               <div className="w-full md:w-6/12 px-4 mr-auto ml-auto">
+                <div className="relative flex flex-col min-w-0 break-words  w-full mb-6 shadow-lg rounded-lg bg-gray-800">
+                  <img
+                    alt="..."
+                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+                    className="w-full align-middle rounded-lg"
+                  />
+                  
+                </div>
+              </div>
+
+              <div className="w-full md:w-6/12 px-4 mr-auto ml-auto">
+                <div className="relative flex flex-col min-w-0 break-words  w-full mb-6 shadow-lg rounded-lg bg-gray-800">
+                  <img
+                    alt="..."
+                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+                    className="w-full align-middle rounded-lg"
+                  />
+                  
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-wrap items-center  my-6">
+             <div className="w-full md:w-6/12 px-4 mr-auto ml-auto ">
+                <div className="relative flex flex-col min-w-0 break-words  w-full mb-6 shadow-lg rounded-lg bg-gray-800">
+                  <img
+                    alt="..."
+                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+                    className="w-full align-middle rounded-lg"
+                  />
+                  
+                </div>
+              </div>
+
+              <div className="w-full md:w-6/12 px-4 mr-auto ml-auto ">
+                <div className="relative flex flex-col min-w-0 break-words  w-full mb-6 shadow-lg rounded-lg bg-gray-800">
+                  <img
+                    alt="..."
+                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+                    className="w-full align-middle rounded-lg"
+                  />
+                  
+                </div>
+              </div>
+            </div>
+          
+          
+          
+        
+            
           </div>
         </section>
         

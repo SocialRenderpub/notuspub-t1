@@ -82,6 +82,41 @@ export default function Landing() {
               </div>
             </div>
           </div>
+
+          <div className="flex flex-wrap items-center ">
+              <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
+                <div className="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
+                  <i className="fas fa-user-friends text-xl"></i>
+                </div>
+                <h3 className="text-3xl mb-2 font-semibold leading-normal">
+                  Working with us is a pleasure
+                </h3>
+                <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+                  Don't let your uses guess by attaching tooltips and popoves to
+                  any element. Just make sure you enable them first via
+                  JavaScript.
+                </p>
+                <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+                  The kit comes with three pre-built pages to help you get
+                  started faster. You can change the text and images and you're
+                  good to go. Just make sure you enable them first via
+                  JavaScript.
+                </p>
+                
+              </div>
+
+              <div className="w-full md:w-6/12 px-4 mr-auto ml-auto">
+                <div className="relative flex flex-col min-w-0 break-words  w-full mb-6 shadow-lg rounded-lg bg-gray-800">
+                  <img
+                    alt="..."
+                    src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+                    className="w-full align-middle rounded-lg"
+                  />
+                  
+                </div>
+              </div>
+            </div>
+          
         </section>
         
 
@@ -97,8 +132,8 @@ export default function Landing() {
                 </p>
               </div>
             </div>
-            <div className="container px-4 mx-auto">
-            <div className="flex flex-wrap my-2">
+            <div className="container px-4 mx-auto space-y-6">
+            <div className="flex flex-wrap sm:grid">
                 <div className="w-1/2 px-4">
                 <img
                   alt="..."
@@ -114,22 +149,15 @@ export default function Landing() {
                 />
                 </div>
               </div>
-              <div className="flex flex-wrap my-2">
-                <div className="w-1/2 px-4 md:w-4/12">
+              <div className="flex flex-wrap my-6">
+                <div className=" w-1/2 px-4">
                 <img
                   alt="..."
                   className="max-w-full rounded-lg shadow-lg"
                   src="https://images.unsplash.com/photo-1533139143976-30918502365b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
                 />
                 </div>
-                <div className="w-1/2 px-4 md:w-4/12">
-                <img
-                  alt="..."
-                  className="max-w-full rounded-lg shadow-lg"
-                  src="https://images.unsplash.com/photo-1533139143976-30918502365b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
-                />
-                </div>
-                <div className="w-1/2 px-4 md:w-4/12">
+                <div className="w-1/2 px-4">
                 <img
                   alt="..."
                   className="max-w-full rounded-lg shadow-lg"
@@ -137,7 +165,8 @@ export default function Landing() {
                 />
                 </div>
               </div>
-              <div className="flex flex-wrap my-2">
+              
+              <div className="flex flex-wrap my-6">
                 <div className="w-1/2 px-4">
                 <img
                   alt="..."
