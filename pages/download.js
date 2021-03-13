@@ -13,7 +13,7 @@ export default function Register() {
             <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300 border-0">
               <div className="rounded-t mb-0 px-6 py-6">
                
-                <h2 className="text-center font-bold">Thank you for downloading Renderpub studio</h2>
+                <h2 className="text-center font-bold">You are amazing ! Thank you for choosing Renderpub studio</h2>
                 <hr className="mt-6 border-b-1 border-gray-400" />
               </div>
               <div className="flex-auto px-4 lg:px-10 py-10 pt-0">
@@ -23,6 +23,8 @@ export default function Register() {
                     alt="..."
                     src={require("assets/img/download.png")}
                     className="w-full align-middle rounded-lg"
+                    height={100}
+                    width={300}
                   />
                   
                 </div>
@@ -43,6 +45,7 @@ export default function Register() {
           </div>
         </div>
       </div>
+     
     </>
   );
 }

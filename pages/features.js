@@ -5,6 +5,8 @@ import Link from "next/link";
 
 import Navbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
+import Hubspot from "components/Custom/hubspot"
+
 
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 
@@ -34,16 +36,11 @@ export default function Landing() {
             
           </div>
         </div>
-
-        
-
-        
-
-        <section className="pt-20 pb-10">
+        <section className="py-20 pt-20">
           <div className="container mx-auto px-4 ">
             <div className="flex flex-wrap justify-center text-center my-8">
               <div className="w-full lg:w-6/12 px-4">
-                <h2 className="text-4xl font-semibold">Showcase</h2>
+                <h2 className="text-4xl font-semibold">Features</h2>
                 <p className="text-lg leading-relaxed m-4 text-gray-600">
                   According to the National Oceanic and Atmospheric
                   Administration, Ted, Scambos, NSIDClead scentist, puts the
@@ -53,7 +50,7 @@ export default function Landing() {
             </div>
 
 
-            <div className="flex flex-wrap items-center my-6">
+            <div className="flex flex-wrap-reverse items-center my-6">
               <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
                 <div className="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
                   <i className="fas fa-user-friends text-xl"></i>
@@ -87,7 +84,7 @@ export default function Landing() {
               </div>
             </div>
 
-            <div className="flex flex-wrap items-center my-6 ">
+            <div className="flex flex-wrap-reverse items-center my-6 ">
               <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
                 <div className="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
                   <i className="fas fa-user-friends text-xl"></i>
@@ -120,7 +117,8 @@ export default function Landing() {
                 </div>
               </div>
             </div>
-            <div className="flex flex-wrap items-center  my-6">
+
+            <div className="flex flex-wrap-reverse items-center  my-6">
               <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
                 <div className="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
                   <i className="fas fa-user-friends text-xl"></i>
@@ -153,13 +151,10 @@ export default function Landing() {
                 </div>
               </div>
             </div>
-          
-          
-          
         
-            
           </div>
         </section>
+        <Hubspot/>
         
 
         
@@ -168,8 +163,9 @@ export default function Landing() {
         
 
 
-        <section className="  py-20 relative block bg-gray-900">
-          <div
+        
+        {/* <section className="relative block   bg-gray-900">
+        <div
             className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
             style={{ transform: "translateZ(0)" }}
           >
@@ -188,20 +184,13 @@ export default function Landing() {
               ></polygon>
             </svg>
           </div>
-
-          <div className="container mx-auto  lg: lg:pb-64">
-            
-            
-          </div>
-        </section>
-        <section className="relative block py-24 lg:pt-0 bg-gray-900">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-wrap justify-center lg:-mt-72 -mt-48">
+          <div className="container py-16 mx-auto px-4 ">
+            <div className="flex flex-wrap justify-center ">
               
-              <div className="w-full lg:w-6/12 px-4">
+              <div className="w-full lg:w-6/12 px-4 ">
 
                 <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300">
-                  <div className="flex-auto p-5 lg:p-10">
+                  <div className="flex-auto p-5 lg:p-5">
                     <h4 className="text-2xl font-semibold">
                       Want us to keep you updated ?
                     </h4>
@@ -237,7 +226,7 @@ export default function Landing() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
       <Footer />
     </>

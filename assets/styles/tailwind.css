@@ -572,6 +572,31 @@ object {
   vertical-align: middle;
 }
 
+.resp-p  {
+  font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1400 - 300)));
+    }
+.resp-h1  {
+  font-size: calc(32px + (48 - 32) * ((100vw - 300px) / (1400 - 300)));
+    }
+.resp-h2  {
+  font-size: calc(22px + (38 - 22) * ((100vw - 300px) / (1400 - 300)));
+    }
+.resp-h3  {
+  font-size: calc(20px + (31 - 20) * ((100vw - 300px) / (1400 - 300)));
+    }
+.resp-h4  {
+  font-size: calc(16px + (25 - 16) * ((100vw - 300px) / (1400 - 300)));
+    }
+.resp-h5  {
+  font-size: calc(14px + (23 - 14) * ((100vw - 300px) / (1400 - 300)));
+    }
+.resp-h6 {
+  font-size: calc(12px + (21 - 12) * ((100vw - 300px) / (1400 - 300)));
+    }
+
+
+
+
 /**
  * Constrain images and videos to the parent width and preserve
  * their instrinsic aspect ratio.

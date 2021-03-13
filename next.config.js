@@ -5,12 +5,20 @@ const withCSS = require("@zeit/next-css");
 const withFonts = require("next-fonts");
 const webpack = require("webpack");
 const path = require("path");
+const withPWA = require('next-pwa')
+
+
+
 
 module.exports = withFonts(
   withCSS(
     withImages(
-      withSass({
+      withSass(
+        withPWA(
+
+      {
         target:"serverless",
+        
         webpack(config, options) {
           config.module.rules.push({
             test: /\.(eot|ttf|woff|woff2)$/,
@@ -21,7 +29,17 @@ module.exports = withFonts(
           config.resolve.modules.push(path.resolve("./"));
           return config;
         },
-      })
+        pwa: {
+          disable: process.env.NODE_ENV === 'development',
+          register: true,
+          scope: '/app',
+          sw: './service-worker.js',
+          dest: 'public'
+        },
+      }
+      
+      )
     )
   )
+)
 );

@@ -4,23 +4,24 @@ import React from "react";
 
 import Navbar from "components/Navbars/AuthNavbar.js";
 import FooterSmall from "components/Footers/FooterSmall.js";
+import IndexNavbar from "components/Navbars/IndexNavbar.js";
+import Footer from "components/Footers/Footer.js";
+
 
 export default function Auth({ children }) {
   return (
     <>
-      <Navbar transparent />
+      <IndexNavbar transparent />
       <main>
-        <section className="relative w-full h-full py-40 min-h-screen">
+        <section className="mt-10 relative w-full h-full py-24 min-h-screen-75">
           <div
             className="absolute top-0 w-full h-full bg-gray-900 bg-no-repeat bg-full"
-            style={{
-              backgroundImage:
-                "url(" + require("assets/img/register_bg_2.png") + ")",
-            }}
+            
           ></div>
           {children}
-          <FooterSmall absolute />
+          
         </section>
+        <Footer  />
       </main>
     </>
   );

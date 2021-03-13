@@ -15,23 +15,24 @@ export default function FooterSmall(props) {
           <div className="flex flex-wrap items-center md:justify-between justify-center">
             <div className="w-full md:w-4/12 px-4">
               <div className="text-sm text-gray-600 font-semibold py-1 text-center md:text-left">
-                Copyright © {new Date().getFullYear()}{" "}
+                
                 <a
-                  href="https://www.creative-tim.com?ref=nnjs-footer-small"
+                  href="/"
                   className="text-white hover:text-gray-400 text-sm font-semibold py-1"
                 >
                    <img
                 src={require("assets/img/brand/nextjs_white.png")}
                 width={200}
-                alt="logo"></img>
+                alt="logo"></img> 
                 </a>
               </div>
+              
             </div>
             <div className="w-full md:w-8/12 px-4">
               <ul className="flex flex-wrap list-none md:justify-end  justify-center">
                 <li>
                   <a
-                    href="https://www.creative-tim.com?ref=nnjs-footer-small"
+                    href="/"
                     className="text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3"
                   >
                     Renderpub
@@ -39,7 +40,7 @@ export default function FooterSmall(props) {
                 </li>
                 <li>
                   <a
-                    href="https://www.creative-tim.com/presentation?ref=nnjs-footer-small"
+                    href="/aboutus"
                     className="text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3"
                   >
                     About Us
@@ -47,7 +48,7 @@ export default function FooterSmall(props) {
                 </li>
                 <li>
                   <a
-                    href="http://blog.creative-tim.com?ref=nnjs-footer-small"
+                    href="#discord"
                     className="text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3"
                   >
                     Discord
@@ -55,7 +56,7 @@ export default function FooterSmall(props) {
                 </li>
                 <li>
                   <a
-                    href="https://github.com/creativetimofficial/notus-nextjs/blob/master/LICENSE.md?ref=nnjs-footer-small"
+                    href="/legal"
                     className="text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3"
                   >
                     Legal

@@ -119,7 +119,7 @@ export default function Footer() {
                     <li>
                       <a
                         className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://github.com/creativetimofficial/notus-nextjs/blob/master/LICENSE.md?ref=nnjs-footer"
+                        href="/legal"
                       >
                         Legal
                       </a>
@@ -127,7 +127,7 @@ export default function Footer() {
                     <li>
                       <a
                         className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/terms?ref=nnjs-footer"
+                        href="/aboutus"
                       >
                         About Us
                       </a>
@@ -135,7 +135,7 @@ export default function Footer() {
                     <li>
                       <a
                         className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/privacy?ref=nnjs-footer"
+                        href="#discord"
                       >
                         Tickets
                       </a>
@@ -143,7 +143,7 @@ export default function Footer() {
                     <li>
                       <a
                         className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/contact-us?ref=nnjs-footer"
+                        href="/contactus"
                       >
                         Contact Us
                       </a>
@@ -159,7 +159,7 @@ export default function Footer() {
               <div className="text-sm text-gray-600 font-semibold py-1">
                 Copyright © {new Date().getFullYear()} {" "}
                 <a
-                  href="https://www.creative-tim.com?ref=nnjs-footer"
+                  href="/"
                   className="text-gray-600 hover:text-gray-900"
                 >
                   Renderpub

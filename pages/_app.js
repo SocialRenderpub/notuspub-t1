@@ -4,6 +4,9 @@ import App from "next/app";
 import Head from "next/head";
 import Router from "next/router";
 
+import SimpleReactLightbox from 'simple-react-lightbox'
+
+
 import PageChange from "components/PageChange/PageChange.js";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -58,6 +61,10 @@ export default class MyApp extends App {
 
     return { pageProps };
   }
+
+  componentDidMount(){
+    window.addEventListener("load", function(){window.wpcc.init({"border":"thin","corners":"small","colors":{"popup":{"background":"#ffffff","text":"#000000","border":"#d8d8d8"},"button":{"background":"#13b9a5","text":"#ffffff"}},"content":{"href":"https://notuspub.rohantesting.workers.dev/legal"}})});
+  }
   render() {
     const { Component, pageProps } = this.props;
 
@@ -65,16 +72,22 @@ export default class MyApp extends App {
 
     return (
       <React.Fragment>
+        <SimpleReactLightbox>
+
         <Head>
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
           <title>Renderpub Studio</title>
+          <link rel="stylesheet" type="text/css" href="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.css"/>
+      <script src="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.js" defer></script>
         </Head>
         <Layout>
           <Component {...pageProps} />
         </Layout>
+        </SimpleReactLightbox>
+
       </React.Fragment>
     );
   }

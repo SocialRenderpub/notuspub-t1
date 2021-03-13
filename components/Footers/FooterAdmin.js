@@ -11,7 +11,7 @@ export default function FooterAdmin() {
               <div className="text-sm text-gray-600 font-semibold py-1 text-center md:text-left">
                 Copyright © {new Date().getFullYear()}{" "} 
                 <a
-                  href="https://www.creative-tim.com?ref=nnjs-footer-admin"
+                  href="#footer"
                   className="text-gray-600 hover:text-gray-800 text-sm font-semibold py-1"
                 >
                    <img
@@ -25,7 +25,7 @@ export default function FooterAdmin() {
               <ul className="flex flex-wrap list-none md:justify-end  justify-center">
                 <li>
                   <a
-                    href="https://www.creative-tim.com?ref=nnjs-footer-admin"
+                    href="/"
                     className="text-gray-700 hover:text-gray-900 text-sm font-semibold block py-1 px-3"
                   >
                      Home
@@ -33,7 +33,7 @@ export default function FooterAdmin() {
                 </li>
                 <li>
                   <a
-                    href="https://www.creative-tim.com/presentation?ref=nnjs-footer-admin"
+                    href="#aboutus"
                     className="text-gray-700 hover:text-gray-900 text-sm font-semibold block py-1 px-3"
                   >
                     About Us
@@ -41,7 +41,7 @@ export default function FooterAdmin() {
                 </li>
                 <li>
                   <a
-                    href="http://blog.creative-tim.com?ref=nnjs-footer-admin"
+                    href="#discord"
                     className="text-gray-700 hover:text-gray-900 text-sm font-semibold block py-1 px-3"
                   >
                     Discord
@@ -49,7 +49,7 @@ export default function FooterAdmin() {
                 </li>
                 <li>
                   <a
-                    href="https://github.com/creativetimofficial/notus-nextjs/blob/master/LICENSE.md?ref=nnjs-footer-admin"
+                    href="/legal"
                     className="text-gray-700 hover:text-gray-900 text-sm font-semibold block py-1 px-3"
                   >
                     Legal

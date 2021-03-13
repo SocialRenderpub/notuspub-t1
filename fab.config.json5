@@ -35,7 +35,7 @@
 
     'cf-workers': {
       account_id: '4f6fbb81f0505de8951f37e75fd41197',
-      api_token: 'JFm5iqM0bHN7NUjzfvTG8IbKxjEo81wMzuAlMY6k',
+      api_token: 'YdF-UnSP6RA-PNHIOMfk56AioTEz8buSNNttlzdP',
       workers_dev: true,
       script_name: 'notuspub',
     }
