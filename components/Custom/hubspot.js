@@ -34,7 +34,8 @@ const Alert = ({ color }) => {
 };
 
 const axios = require('axios');
-const hubspotClient = axios.create({baseURL:'https://api.hubapi.com/contacts/v1/contact/?hapikey=23e5dd34-9abf-4b2f-a7b2-dc3f249490de'})
+//const hubspotClient = axios.create({baseURL:'https://api.hubapi.com/contacts/v1/contact/?hapikey=23e5dd34-9abf-4b2f-a7b2-dc3f249490de'})
+const hubspotClient = axios.create({baseURL:'https://api.hubapi.com/contacts/v1/contact/?hapikey=' + process.env.hubspotApiKey})
 
 
 function Hubspot() {
