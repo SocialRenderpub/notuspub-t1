@@ -18,6 +18,15 @@ module.exports = withFonts(
 
       {
         target:"serverless",
+        env: {
+          hubspotApiKey : process.env.hubspotApiKey ,
+          portalID : process.env.portalID , 
+          formID : process.env.formID , 
+          FAUNADB_SECRET_KEY : process.env.FAUNADB_SECRET_KEY , 
+          COGNITO_DOMAIN : process.env.COGNITO_DOMAIN , 
+          COGNITO_CLIENT_ID : process.env.COGNITO_CLIENT_ID , 
+          NEXTAUTH_URL : process.env.NEXTAUTH_URL
+        }
         
         webpack(config, options) {
           config.module.rules.push({
