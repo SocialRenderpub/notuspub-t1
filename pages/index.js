@@ -9,6 +9,9 @@ import Hubspot from "../components/Custom/hubspot";
 
 
 export default function Index() {
+  console.log(process.env.hubspotApiKey)
+  console.log(process.env.DUMMY)
+
   return (
     <>
       <IndexNavbar fixed />
