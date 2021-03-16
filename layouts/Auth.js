@@ -6,7 +6,7 @@ import Navbar from "components/Navbars/AuthNavbar.js";
 import FooterSmall from "components/Footers/FooterSmall.js";
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footers/Footer.js";
-import IndexNavbarAuth from "components/Navbars/IndexNavbar.js";
+import IndexNavbarAuthupa from "components/Navbars/IndexNavbar.js";
 
 
 export default function Auth({ children }) {
