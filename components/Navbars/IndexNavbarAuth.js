@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 // components
 import { signIn, signOut, useSession } from 'next-auth/client'
-import styles from '../header.module.css'
+//import styles from '../header.module.css'
 
 
 import IndexDropdown from "components/Dropdowns/IndexDropdown.js";
@@ -112,7 +112,6 @@ export default function Navbar(props) {
                 {!session && <>
             <a
                 href={`/api/auth/signin`}
-                className={styles.buttonPrimary}
                 onClick={(e) => {
                   e.preventDefault()
                   signIn("cognito")
@@ -126,17 +125,12 @@ export default function Navbar(props) {
                 </button>
               </a>
           </>}
-            
-            
-            
-            
-            
+        
             
             {session && <>
             
              <a
                  href={`/api/auth/signout`}
-                className={styles.button}
                 onClick={(e) => {
                   e.preventDefault()
                   signOut({callbackUrl:'https://renderpub-notus-auth.vercel.app/signout'})

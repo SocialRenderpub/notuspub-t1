@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
+import IndexNavbarAuth from "components/Navbars/IndexNavbarAuth.js"
 import Footer from "components/Footers/Footer.js";
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 import { SRLWrapper } from "simple-react-lightbox";
@@ -14,7 +15,7 @@ export default function Index() {
 
   return (
     <>
-      <IndexNavbar fixed />
+      <IndexNavbarAuth fixed />
       <section className="header relative pt-16 items-center flex max-h-860-px "style={{height:"75vh"}}>
           <div
             className="absolute top-0 w-full h-full bg-center bg-cover"

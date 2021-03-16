@@ -3,7 +3,7 @@ import Link from "next/link";
 
 // components
 
-import Navbar from "components/Navbars/IndexNavbar.js";
+import Navbar from "components/Navbars/IndexNavbarAuth.js";
 import Footer from "components/Footers/Footer.js";
 
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';

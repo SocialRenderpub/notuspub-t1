@@ -4,7 +4,7 @@ import Link from "next/link";
 
 // components
 
-import Navbar from "components/Navbars/IndexNavbar.js";
+import Navbar from "components/Navbars/IndexNavbarAuth.js";
 import Footer from "components/Footers/Footer.js";
 
 import Hubspot from "components/Custom/hubspot"

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 // components
 
-import Navbar from "components/Navbars/IndexNavbar.js";
+import Navbar from "components/Navbars/IndexNavbarAuth.js";
 import Footer from "components/Footers/Footer.js";
 
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
@@ -33,7 +33,7 @@ export default function Landing() {
               viewBox="0 0 2560 100"
               x="0"
               y="0"
-            >
+            >te
               
             </svg>
             
